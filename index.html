@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body onload="load()">
+    <header>
+      <nav>
+        <select id="breeds" onchange="loadBreeds()" autofocus></select>
+        <select id="subbreeds" onchange="handleRemoveChild('dog-images')">
+          <!-- <option value="SUBBREEDS">SUB-BREEDS</option> -->
+        </select>
+        <div id="num-container">
+          <input
+            type="number"
+            name=""
+            id="number-dog-images"
+            min="1"
+            placeholder="Num of Images"
+            onchange="loadNumber()"
+          />
+          <span>*default value is set to 6</span>
+        </div>
+
+        <button id="btn" onclick="displayImages()">Get Image</button>
+      </nav>
+    </header>
+    <section id="content">
+      <!-- <h5 id="dog-text">Selected Dog Breed:</h5>
+      <h5>Selected Dog SubBreed:</h5>
+      <h5>Number Of Images</h5> -->
+    </section>
+    <div
+      id="dog-images"
+      style="height: auto; width: auto; background-color: azure"
+    ></div>
+    <script src="script.js"></script>
+  </body>
+</html>

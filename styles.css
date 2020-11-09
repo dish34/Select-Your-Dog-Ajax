@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+nav {
+  height: 40vh;
+  width: auto;
+  background-image: linear-gradient(to right, aquamarine, yellow);
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+select,
+input,
+button {
+  font-size: 1.3em;
+  box-shadow: 5px 5px 5px grey;
+  background-color: azure;
+}
+nav > select {
+  text-decoration: dotted;
+}
+input {
+  width: 150px;
+}
+#subbreeds {
+  display: none;
+}
+#dog-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#dog-images img {
+  height: 500px;
+  width: 500px;
+  margin: 15px;
+}
+#content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#btn {
+  border: none;
+  font-size: 1.6em;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 217, 255),
+    rgb(7, 247, 99)
+  );
+  color: black;
+}
+#num-container {
+}
+#number-dog-images {
+  display: block;
+}
+#dog-images {
+  background-image: linear-gradient(to bottom, azure, rgb(245, 207, 136));
+}
