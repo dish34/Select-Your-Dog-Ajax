@@ -4,26 +4,37 @@
 }
 nav {
   height: 40vh;
-  width: auto;
-  background-image: linear-gradient(to right, aquamarine, yellow);
-  margin: 15px;
+  width: 100%;
+  background-image: linear-gradient(to right, aquamarine, pink);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  margin-right: 15px;
 }
 select,
 input,
 button {
-  font-size: 1.3em;
-  box-shadow: 5px 5px 5px grey;
+  font-size: 1.4em;
+  /* box-shadow: 2px -2px 2px rgb(5, 53, 71); */
   background-color: azure;
 }
 nav > select {
   text-decoration: dotted;
 }
+select option {
+  border-bottom: 1px solid purle;
+}
+#num-container span {
+  font-size: 0.9em;
+  color: rgb(70, 70, 70);
+  display: inline-block;
+  margin-top: 10px;
+}
 input {
   width: 150px;
+  padding: -5px;
+  font-size: 1.1em;
 }
 #subbreeds {
   display: none;
@@ -32,6 +43,7 @@ input {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-image: linear-gradient(to bottom, azure, rgb(245, 207, 136));
 }
 #dog-images img {
   height: 500px;
@@ -45,19 +57,34 @@ input {
 }
 #btn {
   border: none;
-  font-size: 1.6em;
+  font-size: 1.7em;
   background-image: linear-gradient(
     to right,
     rgb(0, 217, 255),
     rgb(7, 247, 99)
   );
   color: black;
-}
-#num-container {
+  box-shadow: 5px -5px 5px rgb(253, 160, 160);
 }
 #number-dog-images {
   display: block;
 }
-#dog-images {
-  background-image: linear-gradient(to bottom, azure, rgb(245, 207, 136));
+/* @media screen and (min-width: 600px) {
+  nav {
+    display: block;
+  }
+} */
+@media screen and (max-width: 600px) {
+  nav {
+    /* display: block; */
+    flex-direction: column;
+    margin: auto;
+  }
+  select {
+    width: 150px;
+  }
+  #dog-images img {
+    height: 300px;
+    width: 300px;
+  }
 }

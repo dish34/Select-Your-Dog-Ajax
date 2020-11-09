@@ -36,7 +36,6 @@ function loadBreeds() {
   req.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       var obj = JSON.parse(this.responseText).message;
-      console.log(obj);
       //  Removing Subbreeds
       handleRemoveChild("subbreeds");
 
@@ -80,7 +79,6 @@ function displayImages() {
     //   IF REQUEST IS RECEIVED
     if (this.readyState == 4 && this.status == 200) {
       var images = JSON.parse(this.responseText).message;
-      console.log("images", images);
       var dogimage = document.querySelector("#dog-images");
       //   REMOVE PREVIOUS DOG-IMAGES
       handleRemoveChild("dog-images");
@@ -94,7 +92,6 @@ function displayImages() {
   };
   //   FOR SUBBREADS if present otherwise Breeds
   if (subbreed.value !== "") {
-    alert("YO");
     reqImage.open("GET", url + subbreedUrl + num, true);
     reqImage.send();
   } else {
