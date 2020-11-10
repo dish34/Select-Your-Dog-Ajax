@@ -43,12 +43,13 @@ input {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-image: linear-gradient(to bottom, azure, rgb(245, 207, 136));
+  background-image: linear-gradient(to bottom, azure, wheat);
 }
 #dog-images img {
   height: 500px;
   width: 500px;
   margin: 15px;
+  box-shadow: 10px -10px 10px rgb(253, 160, 160);
 }
 #content {
   display: flex;
