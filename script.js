@@ -99,3 +99,21 @@ var displayImages = () => {
     reqImage.send();
   }
 };
+
+var checkValue = () => {
+  var num = document.querySelector("#number-dog-images");
+  var button = document.querySelector("#btn");
+  var numContainer = document.querySelector("#num-container");
+  if (num.value <= 0) {
+    button.disabled = true;
+    num.style.backgroundColor = "#ff8484";
+    let span = document.createElement("SPAN");
+    span.innerHTML = "*button disabled";
+    numContainer.appendChild(span);
+  } else {
+    button.disabled = false;
+    num.style.backgroundColor = "azure";
+    num.style.borderColor = "black";
+    numContainer.removeChild(numContainer.lastChild);
+  }
+};

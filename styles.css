@@ -29,7 +29,7 @@ select option {
 #num-container span {
   font-size: 0.9em;
   color: rgb(70, 70, 70);
-  display: inline-block;
+  display: block;
   margin-top: 10px;
 }
 input {
