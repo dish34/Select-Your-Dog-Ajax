@@ -11,6 +11,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   margin-right: 15px;
+  position: fixed;
 }
 select,
 input,
@@ -44,6 +45,7 @@ input {
   justify-content: center;
   flex-wrap: wrap;
   background-image: linear-gradient(to bottom, azure, wheat);
+  margin-top: 265px;
 }
 #dog-images img {
   height: 500px;
@@ -84,8 +86,12 @@ input {
   select {
     width: 150px;
   }
+  #dog-images {
+    margin-top: 265px;
+  }
   #dog-images img {
     height: 300px;
     width: 300px;
+    margin-top: 5px;
   }
 }
