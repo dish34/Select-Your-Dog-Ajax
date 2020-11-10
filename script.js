@@ -1,13 +1,13 @@
-function handleRemoveChild(id) {
+var handleRemoveChild = (id) => {
   var dogimage = document.querySelector(`#${id}`);
   let first = dogimage.firstElementChild;
   while (first) {
     first.remove();
     first = dogimage.firstElementChild;
   }
-}
+};
 // To add breeds to the select tag
-function load() {
+var load = () => {
   var req = new XMLHttpRequest();
   req.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -26,9 +26,9 @@ function load() {
   };
   req.open("GET", "https://dog.ceo/api/breeds/list/all", true);
   req.send();
-}
+};
 
-function loadBreeds() {
+var loadBreeds = () => {
   var req = new XMLHttpRequest();
   var breed = document.querySelector("#breeds");
   var subbreed = document.querySelector("#subbreeds");
@@ -60,9 +60,9 @@ function loadBreeds() {
 
   req.open("GET", "https://dog.ceo/api/breeds/list/all", true);
   req.send();
-}
+};
 
-function displayImages() {
+var displayImages = () => {
   var reqImage = new XMLHttpRequest();
   var url = "https://dog.ceo/api/breed/";
   var breed = document.querySelector("#breeds");
@@ -98,8 +98,4 @@ function displayImages() {
     reqImage.open("GET", url + breedUrl + num, true);
     reqImage.send();
   }
-}
-
-function loadNumber() {
-  document.querySelector("#btn").disabled = false;
-}
+};
